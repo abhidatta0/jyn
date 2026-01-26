@@ -1,0 +1,25 @@
+{
+    "name": "jyn",
+    "license": "MIT",
+    "version": "0.0.1-beta.2",
+    "description": "Toolkit for random generation",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "scripts": {
+        "build": "tsup index.ts --format cjs,esm --dts",
+        "lint": "tsc"
+    },
+    "bin":{
+     "gyn":"index.js"
+    },
+    "devDependencies": {
+        "@types/chalk-animation": "^1.6.3",
+        "tsup": "^8.5.1",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "chalk-animation": "^2.0.3"
+    }
+}
