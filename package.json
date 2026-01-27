@@ -11,15 +11,17 @@
         "build": "tsup index.ts --format cjs,esm --dts",
         "lint": "tsc"
     },
-    "bin":{
-     "gyn":"index.js"
+    "bin": {
+        "gyn": "index.js"
     },
     "devDependencies": {
         "@types/chalk-animation": "^1.6.3",
+        "@types/node": "^25.0.10",
         "tsup": "^8.5.1",
         "typescript": "^5.9.3"
     },
     "dependencies": {
+        "@inquirer/prompts": "^8.2.0",
         "chalk-animation": "^2.0.3"
     }
 }
