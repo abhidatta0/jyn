@@ -5,7 +5,7 @@ import { select, Separator } from '@inquirer/prompts';
 import passwordGenerator from './src/password';
 
 async function welcome(){
-  const title = chalkAnimation.rainbow("I'm Gyn - a random generator toolbelt");
+  const title = chalkAnimation.rainbow("I'm Jyn - a random generator toolbelt");
   await sleep();
   title.stop();
   await askBaseSelection();

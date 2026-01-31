@@ -12,7 +12,7 @@
         "lint": "tsc"
     },
     "bin": {
-        "gyn": "index.js"
+        "jyn": "index.js"
     },
     "devDependencies": {
         "@types/chalk-animation": "^1.6.3",
