@@ -10,6 +10,11 @@ A toolkit for random generation
   <source src="./assets/demo.mp4" type="video/mp4">
 </video>
 
+
+[Demo](https://github.com/user-attachments/assets/4a569660-3338-486a-9df0-ff040260d4ed)
+
+
+
 ### Give it a try in your own terminal
 <table>
 <tr>
@@ -18,16 +23,15 @@ A toolkit for random generation
 </tr>
 
 <td>
-
+  
 ```sh
-npx jyn
+npx jyn    
 ```
-
 </td>
 <td>
 
 ```sh
-pnpm dlx jyn
+pnpm dlx jyn      
 ```
 </td>
 </table>
