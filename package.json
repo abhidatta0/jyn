@@ -1,7 +1,7 @@
 {
     "name": "jyn",
     "license": "MIT",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Toolkit for random generation",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
@@ -12,7 +12,7 @@
         "lint": "tsc"
     },
     "bin": {
-        "jyn": "index.js"
+        "jyn": "dist/index.js"
     },
     "devDependencies": {
         "@types/chalk-animation": "^1.6.3",
