@@ -22,7 +22,7 @@ export default async function passwordGenerator(){
     const charsCount = await number({message:'Enter number of characters'});
 
     const configs = await checkbox({
-        message: 'Select a package manager',
+        message: 'Select password complexity options:',
         choices: [
             { name: 'Include Uppercase', value: 'uppercase' },
             { name: 'Include Numbers', value: 'numbers' },

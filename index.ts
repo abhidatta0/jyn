@@ -32,7 +32,7 @@ async function askBaseSelection(){
     }
    }
 
-   console.log({output});
+   console.log("Result: ", output);
 }
 
 

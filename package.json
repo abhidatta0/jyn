@@ -1,7 +1,7 @@
 {
     "name": "jyn",
     "license": "MIT",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "description": "Toolkit for random generation",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
@@ -9,7 +9,8 @@
     "type": "module",
     "scripts": {
         "build": "tsup index.ts --format cjs,esm --dts",
-        "lint": "tsc"
+        "lint": "tsc",
+        "prepare": "npm run build"
     },
     "bin": {
         "jyn": "dist/index.js"
@@ -23,5 +24,8 @@
     "dependencies": {
         "@inquirer/prompts": "^8.2.0",
         "chalk-animation": "^2.0.3"
-    }
+    },
+    "files": [
+    "dist/**/*"
+    ]
 }
