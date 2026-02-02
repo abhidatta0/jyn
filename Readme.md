@@ -7,6 +7,7 @@ A toolkit for random generation
 
 
 <video width="100%" height="300" controls>
+  <source src="./assets/demo.mp4" type="video/mp4">
 </video>
 
 ### Give it a try in your own terminal
