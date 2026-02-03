@@ -4,6 +4,7 @@ import { sleep } from './utils/timers';
 import colors from 'yoctocolors';
 import { select, Separator } from '@inquirer/prompts';
 import {macAddressGenerator, passwordGenerator} from './src';
+import clipboard from 'clipboardy';
 
 async function welcome(){
   const title = chalkAnimation.rainbow("I'm Jyn - a random generator toolbelt");
@@ -33,13 +34,17 @@ async function askBaseSelection(){
    switch(answer){
     case 'password_gen':{
       output = await passwordGenerator();
+      break;
     }
     case 'mac_address_gen':{
       output = await macAddressGenerator();
+      break;
     }
    }
 
-   console.log("Result: ", output);
+   console.log(colors.bgGreen(colors.bold(output??'')));
+   await clipboard.write(output ?? '');
+   console.log("Copied to clipboard!")
 }
 
 
