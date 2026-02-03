@@ -7,8 +7,16 @@
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
     "type": "module",
+    "tsup": {
+        "entry": ["index.ts"],
+        "splitting": true,
+        "sourcemap": false,
+        "clean": true,
+        "minify": true,
+        "format":["cjs","esm"]
+    },
     "scripts": {
-        "build": "tsup index.ts --format cjs,esm --dts",
+        "build": "tsup",
         "lint": "tsc",
         "prepare": "npm run build"
     },
