@@ -38,6 +38,7 @@ pnpm dlx jyn
 
 ### Currently generates
 - Password
+- Mac address
 
 <hr />
 
