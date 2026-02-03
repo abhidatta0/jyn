@@ -1,4 +1,4 @@
-<img width="75px" height="75px" style="text-align: right;" alt="Jyn Logo" src="./assets/logo.png" title="Jyn"/>
+<img width="75px" height="75px" style="text-align: right;" alt="Jyn Logo" src="assets/logo.png" title="Jyn"/>
 
 # Jyn
 A toolkit for random generation
@@ -7,7 +7,7 @@ A toolkit for random generation
 
 
 <video width="100%" height="300" controls>
-  <source src="./assets/demo.mp4" type="video/mp4">
+  <source src="assets/demo.mp4" type="video/mp4">
 </video>
 
 
