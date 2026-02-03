@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import chalkAnimation from 'chalk-animation';
 import { sleep } from './utils/timers';
+import colors from 'yoctocolors';
 import { select, Separator } from '@inquirer/prompts';
-import passwordGenerator from './src/password';
+import {macAddressGenerator, passwordGenerator} from './src';
 
 async function welcome(){
   const title = chalkAnimation.rainbow("I'm Jyn - a random generator toolbelt");
@@ -20,7 +21,10 @@ async function askBaseSelection(){
           name:'Password generation',
           value:'password_gen',
         },
-        new Separator(),
+        {
+          name:'Mac address generation',
+          value:'mac_address_gen',
+        },
       ]
        
     });
@@ -29,6 +33,9 @@ async function askBaseSelection(){
    switch(answer){
     case 'password_gen':{
       output = await passwordGenerator();
+    }
+    case 'mac_address_gen':{
+      output = await macAddressGenerator();
     }
    }
 
@@ -39,7 +46,11 @@ async function askBaseSelection(){
 
 
 async function start(){
-  await welcome();
+  try{
+    await welcome();
+  }catch(e){
+    console.log(colors.red("Operation cancelled"));
+  }
 }
 
 start();

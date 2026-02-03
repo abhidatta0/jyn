@@ -23,9 +23,10 @@
     },
     "dependencies": {
         "@inquirer/prompts": "^8.2.0",
-        "chalk-animation": "^2.0.3"
+        "chalk-animation": "^2.0.3",
+        "yoctocolors": "^2.1.2"
     },
     "files": [
-    "dist/**/*"
+        "dist/**/*"
     ]
 }
