@@ -7,6 +7,7 @@ import {macAddressGenerator, passwordGenerator,
   ipAddressGenerator,
 } from './src';
 import clipboard from 'clipboardy';
+import type { BaseSelection } from './types';
 
 async function welcome(){
   const title = chalkAnimation.rainbow("I'm Jyn - a random generator toolbelt");
@@ -17,7 +18,7 @@ async function welcome(){
 
 
 async function askBaseSelection(){
-    const answer = await select({
+    const answer = await select<BaseSelection>({
       message:'Select your choice',
       choices:[
         {

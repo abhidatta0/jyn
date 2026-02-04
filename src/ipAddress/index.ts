@@ -4,7 +4,7 @@ import generateRandomIPv6 from './ipv6';
 
 
 export default async function ipAddressGenerator(){
-     const answer = await select({
+     const answer = await select<'ipv4'|'ipv6'>({
       message:'Select your choice',
       choices:[
         {
