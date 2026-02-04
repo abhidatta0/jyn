@@ -1,7 +1,7 @@
 {
     "name": "jyn",
     "license": "MIT",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "description": "Toolkit for random generation",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
