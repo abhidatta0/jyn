@@ -3,7 +3,9 @@ import chalkAnimation from 'chalk-animation';
 import { sleep } from './utils/timers';
 import colors from 'yoctocolors';
 import { select, Separator } from '@inquirer/prompts';
-import {macAddressGenerator, passwordGenerator} from './src';
+import {macAddressGenerator, passwordGenerator,
+  ipAddressGenerator,
+} from './src';
 import clipboard from 'clipboardy';
 
 async function welcome(){
@@ -26,6 +28,10 @@ async function askBaseSelection(){
           name:'Mac address generation',
           value:'mac_address_gen',
         },
+        {
+          name:'Ip address generation (choose ipv4 or ipv6)',
+          value:'ip_address_gen',
+        },
       ]
        
     });
@@ -38,6 +44,10 @@ async function askBaseSelection(){
     }
     case 'mac_address_gen':{
       output = await macAddressGenerator();
+      break;
+    }
+    case 'ip_address_gen':{
+      output = await ipAddressGenerator();
       break;
     }
    }
