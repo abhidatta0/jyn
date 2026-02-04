@@ -10,8 +10,8 @@ A toolkit for random generation
   <source src="assets/demo.mp4" type="video/mp4">
 </video>
 
-
-[Demo](https://github.com/user-attachments/assets/4a569660-3338-486a-9df0-ff040260d4ed)
+### Quick look
+[Quick look](https://github.com/user-attachments/assets/a7845f0c-4ee5-414f-ba77-68ce9f1f0c34)
 
 
 
