@@ -42,6 +42,8 @@ pnpm dlx jyn
 - Ip Address (ipv4 and ipv6)
 <hr />
 
+[Future enhances](./enhancements.md)
+
 # License
 
 Copyright (c) 2026 Abhirup Datta (github: [@abhidatta0](https://github.com/abhidatta0))<br/>

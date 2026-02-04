@@ -1,0 +1,7 @@
+- Color - Generate colors in hex, RGB, and HSL formats
+- username 
+- email - as per user provided domain
+- credit card
+- Slug - URL-friendly random strings
+- Cron Expression - Random cron schedule expressions
+- QR code
