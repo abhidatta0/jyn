@@ -39,7 +39,7 @@ pnpm dlx jyn
 ### Currently generates
 - Password
 - Mac address
-
+- Ip Address (ipv4 and ipv6)
 <hr />
 
 # License
