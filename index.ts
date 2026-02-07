@@ -5,6 +5,7 @@ import colors from 'yoctocolors';
 import { select, Separator } from '@inquirer/prompts';
 import {macAddressGenerator, passwordGenerator,
   ipAddressGenerator,
+  emailAddressGenerator,
 } from './src';
 import clipboard from 'clipboardy';
 import type { BaseSelection } from './types';
@@ -33,6 +34,10 @@ async function askBaseSelection(){
           name:'Ip address generation (choose ipv4 or ipv6)',
           value:'ip_address_gen',
         },
+        {
+          name:'Email address generation',
+          value:'email_address',
+        },
       ]
        
     });
@@ -51,11 +56,20 @@ async function askBaseSelection(){
       output = await ipAddressGenerator();
       break;
     }
+    case 'email_address':{
+      output = await emailAddressGenerator();
+      break;
+    }
+    default:{
+      console.log("This is a invalid choice !!")
+    }
    }
 
-   console.log(colors.bgGreen(colors.bold(output??'')));
-   await clipboard.write(output ?? '');
-   console.log("Copied to clipboard!")
+   if(output){
+    console.log(colors.bgGreen(colors.bold(output)));
+    await clipboard.write(output ?? '');
+    console.log("Copied to clipboard!")
+   }
 }
 
 
