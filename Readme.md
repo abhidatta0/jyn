@@ -40,6 +40,10 @@ pnpm dlx jyn
 - Password
 - Mac address
 - Ip Address (ipv4 and ipv6)
+- Ip Address (ipv4 and ipv6)
+- Email address - with custom provider
+- Slug -  URL-friendly random strings 
+
 <hr />
 
 [Future enhances](./enhancements.md)
