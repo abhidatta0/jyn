@@ -3,3 +3,4 @@ export type BaseSelection =
 |'mac_address_gen'
 |'ip_address_gen'
 | 'email_address'
+| 'slug'

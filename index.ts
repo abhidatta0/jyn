@@ -6,6 +6,7 @@ import { select, Separator } from '@inquirer/prompts';
 import {macAddressGenerator, passwordGenerator,
   ipAddressGenerator,
   emailAddressGenerator,
+  slugGenerator,
 } from './src';
 import clipboard from 'clipboardy';
 import type { BaseSelection } from './types';
@@ -38,6 +39,10 @@ async function askBaseSelection(){
           name:'Email address generation',
           value:'email_address',
         },
+         {
+          name:'Slug generation',
+          value:'slug',
+        },
       ]
        
     });
@@ -58,6 +63,10 @@ async function askBaseSelection(){
     }
     case 'email_address':{
       output = await emailAddressGenerator();
+      break;
+    }
+    case 'slug':{
+      output = await slugGenerator();
       break;
     }
     default:{
